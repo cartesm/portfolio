@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url(../images/881e975af06ff67857544c7b64e65cbc.gif);
+  background-size: 150%;
+  background-position: center;
+  background-attachment: fixed;
+   @apply backdrop-blur-md ; 
+}
+
+
+* {
+  @apply text-white font-sans;
+  scroll-behavior: smooth;
+}
+
+.li-header {
+  @apply hover:text-indigo-400 font-semibold transition duration-100;
+}
+
+.li-header:hover {
+  filter: drop-shadow(0 0 4px rgb(37 99 235));
+}
+
+.bounce {
+  animation: bounce 2.5s infinite linear;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.skill-li {
+  @apply rounded-md p-3 bg-gray-800 text-2xl border-2 ;
+}

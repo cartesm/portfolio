@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `KRTS | Sebastian Cartes`,
+    siteUrl: `https://www.yourdomain.tld`,
+    
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss"],
+  pathPrefix:"/portfolio"
 };
